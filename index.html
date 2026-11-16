@@ -1,11 +1,489 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<!-- https://josecarlosbaque.github.io/Curso_Js_Ionic/ -->
 <body>
     <h1>Hola Mundo</h1>
+    <form action="">
+
+    </form>
+    <script>
+    //     let op1;
+    //     let op;
+    //     let op2;
+    //     let opg;
+    //     let resultado;
+    //     let respuesta;
+    //         op1 = pedirOp();
+    //         op2 = pedirOp();
+    //         op = pedirOpe();
+    //         while (true) {
+    //             switch(op) {
+    //                 case "+":
+    //                     resultado = sumar(op1, op2);
+    //                     alert("Resultado: " + resultado);
+    //                     break;
+    //                 case "-":
+    //                     resultado = restar(op1, op2);
+    //                     alert("Resultado: " + resultado);
+    //                     break;
+    //                 case "*":
+    //                     resultado = multiplicar(op1, op2);
+    //                     alert("Resultado: " + resultado);
+    //                     break;
+    //                 case "/":
+    //                     if (op2 === 0) {
+    //                         alert("No se puede dividir entre cero");
+    //                     } else {
+    //                         resultado = dividir( op1, op2);
+    //                         alert("Resultado: " + resultado);
+    //                     }
+    //                     break;
+    //                 default:
+    //                     alert("Operador no válido");
+    //                     break;
+    //                 }
+    //                 respuesta = prompt("¿Quieres seguir operando? (Escribe 'No' para salir)", "");
+    //                 if (respuesta !== null && respuesta.toLowerCase() === "no") {
+    //                     break; // Rompe el bucle principal 'while (true)' y cierra la app
+    //                 }
+    //             }
+
+    // function pedirOp() {
+    //     opg = prompt("Dime un número", "");
+    //         while (isNaN(parseInt(opg))) {
+    //             opg = prompt("Eso no es un número. Dime el otro número:", "");
+    //         }
+    //     return +opg
+    // }
+    // function sumar(op1, op2){
+    //     return resultado = op1 + op2;
+    // }
+    // function restar(){
+    //     return resultado = op1 - op2;
+    // }
+    // function multiplicar(){
+    //     return resultado = op1 * op2;
+    // }
+    // function dividir(){
+    //     return resultado = op1 / op2;
+    // }
+    // function pedirOpe() {
+    //     let ope = prompt("Dime el operador + , - , * , /", "");
+    //     return ope;
+    // }
+
+    // -------------------------------------------------------------------
+    // let dia,num,año;
+    // let cont = 1;
+    // let nRandom = parseInt(Math.random() * 1000);
+    // alert(n);
+    // while (true) {
+    //     num = prompt('Introduzca el número del 1 al 999:', '');
+    //     num = parseInt(num);
+    //     if (num < nRandom) {
+    //         cont++;
+    //         alert("Mas Alto");
+    //     } else if(num > nRandom) {
+    //         cont++;
+    //         alert("Mas Bajo")
+    //     } else if ( num == nRandom){
+    //         alert("Los has logrado en " + cont + " intentos")
+    //         break;
+    //     }else {
+    //         break;
+    //         // cont++;
+    //         // alert("introduce un numero");
+    //     }
+    // }
+    // -------------------------------------------------------------
+    // let user = {}
+    // user.name = "John";
+    // user.surname = "Smith";
+    // user.name = "Jose";
+    // delete user.name;
+    // -------------------------------------------------------------------
+    // function isEmpty(obj){
+    //     for (let prop in obj) {
+    //         return false;
+    //     }
+    //     return true;
+    // }
+    // let schedule = {};
+    // alert(isEmpty(schedule)); // true
+    // schedule["8:30"] = "Hora de levantarse";
+    // alert(isEmpty(schedule)); // false
+    // ------------------------------------------------------------
+    // function multiplyNumeric(obj) {
+    //     for (let num in obj) {
+    //         if (typeof obj[num] === "number") {
+    //             obj[num]  *= 2;
+    //         }
+    //     }
+    // }
+    // let menu = {
+    //     width: 200,
+    //     height: 300,
+    //     title: "Mi menú"
+    // };
+    // multiplyNumeric(menu);
+    // alert(menu.height)
+    // -------------------------------------------------------------------
+    // let calculator = {
+    //     a: 0,
+    //     b: 0,
+    //     se puede sin los this pero no es correcto para un proyecto grande
+    //     read() {
+    //         this.a = +prompt("Dime el n1", "");
+    //         this.b = +prompt("Dime el n2", "");
+    //     },
+    //     sum() {
+    //         return this.a + this.b;
+    //     },
+    //     mul() {
+    //         return this.a * this.b;
+    //     }
+    // };
+    // let calculator = {
+    //     read() {
+    //         this.a = +prompt("Dime el n1", "");
+    //         this.b = +prompt("Dime el n2", "");
+    //     },
+    //     sum() {
+    //         return this.a + this.b;
+    //     },
+    //     mul() {
+    //         return this.a * this.b;
+    //     }
+    // };
+    // calculator.read();
+    // alert(calculator.sum());
+    // alert(calculator.mul());
+    // class calculator {
+    //     read() {
+    //         this.a = +prompt("Dime el n1", "");
+    //         this.b = +prompt("Dime el n2", "");
+    //     };
+    //     sum() {
+    //         return this.a + this.b;
+    //     };
+    //     mul() {
+    //         return this.a * this.b;
+    //     }
+    // };
+    // let calcu = new calculator();
+    // calcu.read();
+    // alert(calcu.sum());
+    // alert(calcu.mul());
+    // -------------------------------------------------------------------
+    // function Accumulator(startingValue) {
+    //     this.value = startingValue;
+    //     this.read = function() {
+    //         this.value += +prompt("Dime un numero", "");
+    //     }
+    // }
+    // let accumulator = new Accumulator(1); // valor inicial 1
+    // accumulator.read(); // agrega el valor introducido por el usuario
+    // alert(accumulator.value);
+    // accumulator.read(); // agrega el valor introducido por el usuario
+    // alert(accumulator.value);
+    // -------------------------------------------------------------------
+    // let palabra = prompt("Dime una palabra", "");
+    // let plbLower = "";
+    // let esPalindromo = true;
+    // // for con doble let
+    // // function comparaLetras(frase) {
+    // // let palindromo = true;
+    // //     for (let i = 0, j = fraseProcesada.length - 1; i < j; i++, j--) {
+    // //         if (fraseProcesada[i] != fraseProcesada[j]) {
+    // //             palindromo = false;
+    // //             break;
+    // //         }
+    // //     }
+    // //     return palindromo;
+    // // }
+    // for(let char of palabra){
+    //     if(char === " ") {
+    //         continue;
+    //     }
+    //     if(char === "á" || char === "Á") {
+    //         plbLower += "a"
+    //     } else if(char === "é" || char === "É") {
+    //         plbLower += "e"
+    //     } else if(char === "í" || char === "Í") {
+    //         plbLower += "i"
+    //     } else if(char === "ó" || char === "Ó") {
+    //         plbLower += "o"
+    //     } else if(char === "ú" || char === "Ú") {
+    //         plbLower += "u"
+    //     } else {
+    //         plbLower += char.toLocaleLowerCase()
+    //     }
+    // }
+    // // plbLower = plbLower.toLowerCase();
+    // // alert(plbLower);
+    // for (let i = 0; i < plbLower.length; i++) {
+    //     let letraInicio = plbLower[i];
+    //     let letraFin = plbLower[plbLower.length - 1 - i];
+    //     if (letraInicio !== letraFin) {
+    //         esPalindromo = false;
+    //         break;
+    //     }
+    // }
+    // if (esPalindromo) {
+    //         alert("¡Sí es un Palíndromo!");
+    //     } else {
+    //         alert("No es un Palíndromo");
+    //     }
+    // let styles = ["Jazz", "Blues"];
+    // alert(String(styles));
+    // styles.push("Rock-n-Roll");
+    // alert(String(styles));
+    // styles[Math.floor(styles.length/2)] = "Classics";
+    // alert(String(styles));
+    // styles.shift();
+    // alert(String(styles));
+    // styles.unshift("Rap", "Reggae");
+    // alert(String(styles));
+    //-----------------------------------------------------------------
+    // function getMaxSubSum() {
+    //     let max = {valor : 0, posicion : 0, elementos : 0};
+    //     let numeros = [1, -2, 3, 4, -9, 6]
+    //     for(let i = 0; i < numeros.length; i++){
+    //         for(let j = i; j < numeros.length; j++){
+    //             let sum = 0;
+    //             for(let x = i; x <= j; x++){ 
+    //                 sum += numeros[x];
+    //             }
+    //             if (sum > max.valor) {
+    //                 max = {valor : sum, posicion : i, elementos : j}
+    //             }
+    //         }
+    //     }
+    //     return max;
+    // }
+    // let resultado = getMaxSubSum();
+    // alert(resultado.valor + " " + resultado.posicion + " " + resultado.elementos);
+    //----------------------------------------------------------------
+    // function camelize(str) {
+    //     let array = [];
+    //     array = str.split("-").filter(item => item != "");
+    //     let primero = array.slice(0, 1);
+    //     // alert(Array.isArray(primero))
+    //     let resto = array.length > 1 ? array.slice(1) : [];
+    //     primero = primero.map(palabra => palabra.toLowerCase());
+    //     //alert(primero)
+    //     function capitalizar(palabra) {
+    //         let inicial = palabra[0].toUpperCase();
+    //         let resto = palabra.substring(1).toLowerCase();
+    //         return inicial + resto;
+    //     }
+    //     let resto_capitalizado =resto.map(palabra => capitalizar(palabra));
+    //     let pal_procesada = primero.concat(resto_capitalizado).join("");
+    //     return pal_procesada;
+    //     //alert(capitalizar(str));
+    //     }
+    //     //capitalizar(str);
+    // alert(camelize("-background-color"));
+    // //camelize("background-color");
+    // ----------------------------------------------------------------
+    // function unique(arr) {
+    // //return arr = new Array();
+    //     let array = [];
+    //     for (let elemento of arr) {
+    //         if (!array.includes(elemento)) {
+    //             array.push(elemento);
+    //         }
+    //     }
+    //     return array;
+    // }
+    
+    // let values = ["Hare", "Krishna", "Hare", "Krishna",
+    //     "Krishna", "Krishna", "Hare", "Hare", ":-O"
+    // ];
+    // alert(unique(values)); // Hare, Krishna, 😮 
+    // ----------------------------------------------------------------
+    // let arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
+    // function aclear(arr) {
+    //     let mapSinAnagramas = new Map();
+    //     for (let palabra of arr) {
+    //         let ordenada = palabra.toLowerCase().split('').sort().join('');
+    //         //console.log
+    //         (`Palabra ${palabra} : Ordenada ${ordenada}`);
+    //         if (!mapSinAnagramas.has(ordenada)) {
+    //             mapSinAnagramas.set(ordenada, palabra);
+    //         }
+    //     }
+    //     return Array.from(mapSinAnagramas.values());
+    // }
+    // alert(aclear(arr));
+    //----------------------------------------------------------------
+    // let salaries = {
+    //     "John": 100,
+    //     "Pete": 300,
+    //     "Mary": 250
+    // };
+    // function sumSalaries(obj){
+    //     let sum = 0;
+    //     let salarios = Object.values(salaries);
+    //     for (let salario of salarios) {
+    //         sum += salario;
+    //     }
+    //     return sum;
+    // }
+    // alert(sumSalaries(salaries));
+    // ----------------------------------------------------------------
+    // let arraySalaries = Object.entries(salaries);
+    // let setSalaries = Array.from(new Set(Object.values(salaries)));
+    // let bigSalary = Math.max(...setSalaries);
+    // let [name, salary] = arraySalaries.find(([name, salary]) => salary === bigSalary);
+    // alert(`El salario más alto es de ${name} con ${salary}`); 
+    // ---------------------------------------------------------------
+    // let date = new Date(Date.parse("2012-02-20T03:12"))
+    // alert(date)
+    // const months = {
+    //     "Jan": '01',
+    //     "Feb": '02',
+    //     "Mar": '03',
+    //     "Apr": '04',
+    //     "May": '05',
+    //     "Jun": '06',
+    //     "Jul": '07',
+    //     "Aug": '08',
+    //     "Sep": '09',
+    //     "Oct": '10',
+    //     "Nov": '11',
+    //     "Dec": '12'
+	// }; 
+    // function formatearFecha(fechaStr) {
+    //     let fechafinal;
+    //     let [mesDia, anio, tiempo] = fechaStr.split(",");
+    //     let [mes, dia] = mesDia.trim().split(" ")
+    //     let [hora, minuto, segundos = "00", milisegundos = "000"] = tiempo.trim().split(":")
+    //     mes = months[mes];
+    //     // switch (mes) {
+    //     //     case "Ene":
+    //     //         mes = "01";
+    //     //     break;
+    //     //     case "Feb":
+    //     //         mes = "02";
+    //     //     break;
+    //     //     case "Mar":
+    //     //         mes = "03";
+    //     //     break;
+    //     //     case "Abr":
+    //     //         mes = "04";
+    //     //     break;
+    //     //     case "May":
+    //     //         mes = "05";
+    //     //     break;
+    //     //     case "Jun":
+    //     //         mes = "06";
+    //     //     break;
+    //     //     case "Jul":
+    //     //         mes = "07";
+    //     //     break;
+    //     //     case "Ago":
+    //     //         mes = "08";
+    //     //     break;
+    //     //     case "Sep":
+    //     //         mes = "09";
+    //     //     break;
+    //     //     case "Oct":
+    //     //         mes = "10";
+    //     //     break;
+    //     //     case "Nov":
+    //     //         mes = "11";
+    //     //     break;
+    //     //     case "Dic":
+    //     //         mes = "12";
+    //     //     break;
+    //     // }
+    //     // minuto = minuto.replace("am", "").replace("pm", "")
+    //     if (dia.length === 1) dia = "0" + dia;
+    //     if (hora.length === 1) hora = "0" + hora;
+    //     if (minuto.length === 1) minuto = "0" + minuto;
+    //     // alert(mes);
+    //     // alert(dia);
+    //     // alert(hora);
+    //     // alert(minuto);
+    //     fechafinal = new Date(Date.parse(anio.trim() + "-" + mes + "-" + dia + "T" + hora + ":" + minuto + ":" + segundos + "." + milisegundos))//+ "Z" Daria +1 en hora
+    //     return fechafinal;
+    // }
+    // alert(formatearFecha("Feb 20, 2012, 3:12")) 
+    // ----------------------------------------------------------------
+    // let user = {
+    //     name: "John Smith",
+    //     age: 35
+    // };
+    // let userjson = JSON.stringify(user);
+    // let newuser = JSON.parse(userjson)
+    // alert(newuser.age)
+    // ---------------------------------------------------------------
+    // let room = {
+    //     number: 23
+    // };
+
+    // let meetup = {
+    //     title: "Conference",
+    //     occupiedBy: [{ name: "John" }, { name: "Alice" }],
+    //     place: room
+    // };
+
+    // // referencias circulares
+    // room.occupiedBy = meetup;
+    // meetup.self = meetup;
+
+    // alert(JSON.stringify(meetup, function replacer(key, value) {
+    //     return (key != "" && value == meetup) ? undefined : value;
+    // }));
+    // ----------------------------------------------------------------
+    // function sumTo(n) {
+    //     let sum = 0;
+    //     for (let i = 1; i <= n; i++) {
+    //         sum += i;
+    //     }
+    //     return sum;
+    // }
+    // alert(sumTo(100));
+
+    // function sumTo(n) {
+    // if (n == 1) return 1;
+    // return n + sumTo(n - 1);
+    // }
+    // alert( sumTo(100) );
+
+    // function sumTo(n) {
+    // return n * (n + 1) / 2;
+    // }
+    // alert( sumTo(100) );
+    // ---------------------------------------------------------------
+    let matriz = [
+        [-20, -4, -1],
+        [  1,  4,  7], 
+        [  8, 10, 12]]
+    let filas = matriz.length;
+    let columnas = matriz[0].length;
+    function up_down_col_sort(list) {
+        let matriz_ordenada = JSON.parse(JSON.stringify(list));
+        for(let i = 0; i < columnas ;i++) {
+            for(let j = 0; j < filas-1; j++){
+                for(let k = 0; k < filas-1- j; k++){
+                    if(matriz_ordenada[k][i] > matriz_ordenada[k+1][i]){
+                        let almacen = matriz_ordenada[k][i];
+                        matriz_ordenada[k][i] = matriz_ordenada[k + 1][i]
+                        matriz_ordenada[k + 1][i] =  almacen
+                    }
+                }
+            }
+        }
+        return matriz_ordenada;
+    }
+    alert(JSON.stringify(up_down_col_sort(matriz)))
+</script> 
 </body>
 </html>
